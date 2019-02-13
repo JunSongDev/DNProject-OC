@@ -1,0 +1,9 @@
+Pods/
+Podfile.lock
+DNProject.xcworkspace
+# 忽略Xcode本地用户配置信息
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+xcshareddata/
+.metadata/

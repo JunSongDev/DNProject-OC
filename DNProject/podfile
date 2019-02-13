@@ -1,0 +1,11 @@
+target 'DNProject' do
+pod 'SDCycleScrollView'
+pod 'NinaPagerView'
+pod 'MBProgressHUD'
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'Masonry'
+pod 'Toast'
+end
