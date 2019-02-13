@@ -49,13 +49,13 @@ static DNPhotoManager *_manager = nil;
         PHFetchResult<PHAssetCollection *> *assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
         // 遍历所有的自定义相簿
         for (PHAssetCollection *assetCollection in assetCollections) {
-            [self enumerateAssetsInAssetCollection:assetCollection original:NO];
+            [self enumerateAssetsInAssetCollection:assetCollection albumName:assetCollection.localizedTitle original:NO];
         }
         
         // 获得相机胶卷
         PHAssetCollection *cameraRoll = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].lastObject;
         // 遍历相机胶卷,获取大图
-        [self enumerateAssetsInAssetCollection:cameraRoll original:NO];
+        [self enumerateAssetsInAssetCollection:cameraRoll albumName:@"相机胶卷" original:NO];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
@@ -73,10 +73,11 @@ static DNPhotoManager *_manager = nil;
  @param assetCollection 相簿
  @param original 是否要原图
  */
-- (void)enumerateAssetsInAssetCollection:(PHAssetCollection *)assetCollection original:(BOOL)original {
+- (void)enumerateAssetsInAssetCollection:(PHAssetCollection *)assetCollection albumName:(NSString *)albumName original:(BOOL)original {
     
     DNPhotoPickerViewModel *model = [[DNPhotoPickerViewModel alloc] init];
-    model.albumName = assetCollection.localizedTitle;
+    model.albumName = albumName;
+    
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
     options.resizeMode = PHImageRequestOptionsResizeModeFast;
     // 同步获得图片, 只会返回1张图片

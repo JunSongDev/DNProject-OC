@@ -40,10 +40,12 @@
 
 - (void)setupnavigationItem {
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册"
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:self
-                                                                            action:@selector(leftClick)];
+    UIImage *image = [[UIImage imageNamed:@"back@2x"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIButton *leftBtn = [[UIButton alloc] init];
+    leftBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -12, 0, 0);
+    [leftBtn setImage:image forState:UIControlStateNormal];
+    [leftBtn addTarget:self action:@selector(leftClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消"
                                                                               style:UIBarButtonItemStylePlain
@@ -108,8 +110,8 @@
     if (!_collectionView) {
         
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-        flowLayout.itemSize = CGSizeMake((UIScreen.mainScreen.bounds.size.width - 10) / 3,
-                                         (UIScreen.mainScreen.bounds.size.width - 10) / 3);
+        flowLayout.itemSize = CGSizeMake((UIScreen.mainScreen.bounds.size.width - 15) / 4,
+                                         (UIScreen.mainScreen.bounds.size.width - 15) / 4);
         flowLayout.minimumLineSpacing = 5.f;
         flowLayout.minimumInteritemSpacing = 5.f;
         

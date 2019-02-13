@@ -109,8 +109,6 @@
     DNPhotoPickerController *pickerVc = [[DNPhotoPickerController alloc] init];
     pickerVc.model = model;
     [self.navigationController pushViewController:pickerVc animated:NO];
-    
-    NSLog(@"%ld", dataArr.count);
 }
 
 #pragma mark -- Setter

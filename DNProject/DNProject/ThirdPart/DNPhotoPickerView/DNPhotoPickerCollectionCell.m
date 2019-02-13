@@ -33,7 +33,13 @@
     //self.dataImage.contentMode = UIViewContentModeScaleToFill;
     self.dataImage.contentMode = UIViewContentModeScaleAspectFit;
     
+    self.chooseBtn = [[UIButton alloc] init];
+    [self.chooseBtn setImage:[UIImage imageNamed:@"choosePhoto@2x"] forState:UIControlStateNormal];
+    self.chooseBtn.layer.cornerRadius  = UIScreen.mainScreen.bounds.size.width*0.03;
+    self.chooseBtn.layer.masksToBounds = YES;
+    
     [self.contentView addSubview:self.dataImage];
+    [self.contentView addSubview:self.chooseBtn];
     
     [self setupSubviewsConstraints];
 }
@@ -45,6 +51,12 @@
     [self.dataImage.leftAnchor   constraintEqualToAnchor:self.contentView.leftAnchor].active = YES;
     [self.dataImage.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor].active = YES;
     [self.dataImage.rightAnchor  constraintEqualToAnchor:self.contentView.rightAnchor].active = YES;
+    
+    self.chooseBtn.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.chooseBtn.topAnchor    constraintEqualToAnchor:self.dataImage.topAnchor constant:4].active = YES;
+    [self.chooseBtn.rightAnchor  constraintEqualToAnchor:self.dataImage.rightAnchor constant:-4].active = YES;
+    [self.chooseBtn.widthAnchor  constraintEqualToConstant:UIScreen.mainScreen.bounds.size.width*0.06].active = YES;
+    [self.chooseBtn.heightAnchor constraintEqualToConstant:UIScreen.mainScreen.bounds.size.width*0.06].active = YES;
 }
 
 - (void)setModel:(DNImageModel *)model {

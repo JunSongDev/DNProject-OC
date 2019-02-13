@@ -15,6 +15,8 @@
 		7001C09621EED50A00535562 /* NSString+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7001C09521EED50A00535562 /* NSString+Extra.m */; };
 		700450412213E3CC00718E49 /* DNAlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700450402213E3CC00718E49 /* DNAlbumListController.m */; };
 		700450442213E84D00718E49 /* DNAlbumLisetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 700450432213E84D00718E49 /* DNAlbumLisetCell.m */; };
+		7004504C221405EB00718E49 /* choosePhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7004504B221405EB00718E49 /* choosePhoto@2x.png */; };
+		7004504E2214066800718E49 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7004504D2214066800718E49 /* back@2x.png */; };
 		7016D65A21F1729B0092C4C2 /* DNNavTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7016D65921F1729B0092C4C2 /* DNNavTitleView.m */; };
 		7020040021EC7AC100E2B306 /* UIImage+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 702003FF21EC7AC100E2B306 /* UIImage+Extra.m */; };
 		7020040321EC7C1700E2B306 /* UIFont+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020040221EC7C1700E2B306 /* UIFont+Extra.m */; };
@@ -72,6 +74,8 @@
 		700450402213E3CC00718E49 /* DNAlbumListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAlbumListController.m; sourceTree = "<group>"; };
 		700450422213E84D00718E49 /* DNAlbumLisetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAlbumLisetCell.h; sourceTree = "<group>"; };
 		700450432213E84D00718E49 /* DNAlbumLisetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAlbumLisetCell.m; sourceTree = "<group>"; };
+		7004504B221405EB00718E49 /* choosePhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choosePhoto@2x.png"; sourceTree = "<group>"; };
+		7004504D2214066800718E49 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		7016D65821F1729B0092C4C2 /* DNNavTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNNavTitleView.h; sourceTree = "<group>"; };
 		7016D65921F1729B0092C4C2 /* DNNavTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNNavTitleView.m; sourceTree = "<group>"; };
 		702003FC21EC77EB00E2B306 /* CustomHeadFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomHeadFile.h; sourceTree = "<group>"; };
@@ -323,6 +327,8 @@
 		707513B02213BBC800CC70E2 /* DNPhotoPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				7004504D2214066800718E49 /* back@2x.png */,
+				7004504B221405EB00718E49 /* choosePhoto@2x.png */,
 				707513AD2213BA9000CC70E2 /* DNPhotoPickerController.h */,
 				707513AE2213BA9000CC70E2 /* DNPhotoPickerController.m */,
 				7004503F2213E3CC00718E49 /* DNAlbumListController.h */,
@@ -466,6 +472,8 @@
 			files = (
 				705987AA21EC748C009E6FC5 /* Main.storyboard in Resources */,
 				705987A721EC748C009E6FC5 /* Assets.xcassets in Resources */,
+				7004504E2214066800718E49 /* back@2x.png in Resources */,
+				7004504C221405EB00718E49 /* choosePhoto@2x.png in Resources */,
 				705987A921EC748C009E6FC5 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
