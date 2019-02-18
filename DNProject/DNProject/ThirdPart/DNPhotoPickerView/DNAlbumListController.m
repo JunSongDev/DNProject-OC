@@ -24,6 +24,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = UIColor.whiteColor;
+    self.title = @"照片选择";
     
     [[DNPhotoManager defaultManager] getCompressImages];
     [DNPhotoManager defaultManager].delegate = self;

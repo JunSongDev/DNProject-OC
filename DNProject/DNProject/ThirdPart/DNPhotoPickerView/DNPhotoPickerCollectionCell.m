@@ -23,6 +23,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self initializationSubviews];
+        
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selectPhotoFull) name:@"SelectPhotoFull" object:nil];
     }
     return self;
 }
@@ -37,6 +39,7 @@
     [self.chooseBtn setImage:[UIImage imageNamed:@"choosePhoto@2x"] forState:UIControlStateNormal];
     self.chooseBtn.layer.cornerRadius  = UIScreen.mainScreen.bounds.size.width*0.03;
     self.chooseBtn.layer.masksToBounds = YES;
+    [self.chooseBtn addTarget:self action:@selector(choosePhoto) forControlEvents:UIControlEventTouchUpInside];
     
     [self.contentView addSubview:self.dataImage];
     [self.contentView addSubview:self.chooseBtn];
@@ -64,5 +67,42 @@
     _model = model;
     
     self.dataImage.image = [UIImage imageWithData:model.imageData];
+}
+
+- (UIImage *)dn_imageWithColor:(UIColor *)color {
+    
+    if (!color) return nil;
+    
+    CGRect rect = CGRectMake(0.0f, 0.0f,
+                             UIScreen.mainScreen.bounds.size.width*0.06,
+                             UIScreen.mainScreen.bounds.size.width*0.06);
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rect);
+    
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+- (void)choosePhoto {
+    
+    self.model.selected = !self.model.selected;
+    
+    if (self.model.selected) {
+        
+        [self.chooseBtn setImage:[self dn_imageWithColor:UIColor.blueColor] forState:UIControlStateNormal];
+        
+        if (self.delegate && [self.delegate respondsToSelector:@selector(selectPhoto:)]) {
+            
+            [self.delegate selectPhoto:self.model];
+        }
+    } else {
+        
+        [self.chooseBtn setImage:[UIImage imageNamed:@"choosePhoto@2x"] forState:UIControlStateNormal];
+    }
+    
 }
 @end

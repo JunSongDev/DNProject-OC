@@ -9,6 +9,7 @@
 #import "DNPhotoManager.h"
 #import "DNPhotoPickerViewModel.h"
 #import "DNImageModel.h"
+#import <UIKit/UIKit.h>
 
 @interface DNPhotoManager ()
 
@@ -43,28 +44,78 @@ static DNPhotoManager *_manager = nil;
 
 - (void)getCompressImages {
     
-    [self.albumData removeAllObjects];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        // 获得所有的自定义相簿
-        PHFetchResult<PHAssetCollection *> *assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
-        // 遍历所有的自定义相簿
-        for (PHAssetCollection *assetCollection in assetCollections) {
-            [self enumerateAssetsInAssetCollection:assetCollection albumName:assetCollection.localizedTitle original:NO];
-        }
+    __weak typeof(self) weakself = self;
+    
+    [self getAlbumAuth:^{
         
-        // 获得相机胶卷
-        PHAssetCollection *cameraRoll = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].lastObject;
-        // 遍历相机胶卷,获取大图
-        [self enumerateAssetsInAssetCollection:cameraRoll albumName:@"相机胶卷" original:NO];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            if (self.delegate && [self.delegate respondsToSelector:@selector(getAllPhotsData:)]) {
-                
-                [self.delegate getAllPhotsData:self.albumData];
+        [weakself.albumData removeAllObjects];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            // 获得所有的自定义相簿
+            PHFetchResult<PHAssetCollection *> *assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+            // 遍历所有的自定义相簿
+            for (PHAssetCollection *assetCollection in assetCollections) {
+                [weakself enumerateAssetsInAssetCollection:assetCollection albumName:assetCollection.localizedTitle original:NO];
             }
+            
+            // 获得相机胶卷
+            PHAssetCollection *cameraRoll = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].lastObject;
+            // 遍历相机胶卷,获取大图
+            [weakself enumerateAssetsInAssetCollection:cameraRoll albumName:@"相机胶卷" original:NO];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                if (weakself.delegate && [weakself.delegate respondsToSelector:@selector(getAllPhotsData:)]) {
+                    
+                    [weakself.delegate getAllPhotsData:weakself.albumData];
+                }
+            });
         });
-    });
+        
+    }];
+    
+}
+
+- (void)getAlbumAuth:(void(^)(void))completeHandler {
+    
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    switch (status) {
+        case PHAuthorizationStatusRestricted:
+            DNLog(@"因为系统原因, 无法访问相册");
+            break;
+            
+        case PHAuthorizationStatusDenied: {
+            
+            DNLog(@"用户拒绝");
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"警告"
+                                                                message:@"请去-> [设置 - 隐私 - 相机 - 项目名称] 打开访问开关"
+                                                               delegate:self
+                                                      cancelButtonTitle:@"取消"
+                                                      otherButtonTitles:@"去设置", nil];
+            
+            [alertView show];
+        } break;
+            
+        case PHAuthorizationStatusAuthorized: {
+            
+            DNLog(@"用户允许");
+            completeHandler();
+        } break;
+            
+        case PHAuthorizationStatusNotDetermined: {
+            
+            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+               
+                if (status == PHAuthorizationStatusAuthorized) {
+                    
+                    completeHandler();
+                    
+                } else {
+                    
+                    DNLog(@"用户拒绝");
+                }
+            }];
+        } break;
+    }
 }
 
 /**
@@ -100,6 +151,7 @@ static DNPhotoManager *_manager = nil;
                                                     
                                                     DNImageModel *imageModel = [[DNImageModel alloc] init];
                                                     imageModel.imageData = UIImagePNGRepresentation(result);
+                                                    imageModel.selected = NO;
                                                     [array addObject:imageModel];
                                                 }];
     }

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DNImageModel : NSObject
 
 @property (nonatomic, strong) NSData *imageData;
+@property (nonatomic, assign, getter=isSelected) BOOL selected;
 @end
 
 NS_ASSUME_NONNULL_END
