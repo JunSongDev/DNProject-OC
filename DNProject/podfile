@@ -1,11 +1,31 @@
 target 'DNProject' do
+
+# 轮播图
 pod 'SDCycleScrollView'
+
+# 分页控件
 pod 'NinaPagerView'
+
+# 提示框
 pod 'MBProgressHUD'
+pod 'Toast'
+
+# 网络请求
 pod 'AFNetworking'
 pod 'MJExtension'
+
+# 图片加载
 pod 'SDWebImage'
+
+# 下拉刷新
 pod 'MJRefresh'
+
+# 自动布局
 pod 'Masonry'
-pod 'Toast'
+
+# socket
+pod 'CocoaAsyncSocket'
+# webSocket
+pod 'SocketRocket'
+
 end

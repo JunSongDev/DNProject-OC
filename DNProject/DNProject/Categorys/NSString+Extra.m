@@ -96,7 +96,6 @@ static NSString  *const DNRangeKey = @"range";
                                      options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                   attributes:attributeDict
                                      context:nil];
-    
     return rect.size;
 }
 

@@ -18,6 +18,9 @@
 		7004504C221405EB00718E49 /* choosePhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7004504B221405EB00718E49 /* choosePhoto@2x.png */; };
 		7004504E2214066800718E49 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7004504D2214066800718E49 /* back@2x.png */; };
 		7016D65A21F1729B0092C4C2 /* DNNavTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7016D65921F1729B0092C4C2 /* DNNavTitleView.m */; };
+		701BAF03221565110075D23A /* DNNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 701BAF02221565110075D23A /* DNNavigationBar.m */; };
+		701BAF06221568470075D23A /* UIViewController+DNNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 701BAF05221568470075D23A /* UIViewController+DNNavigationBar.m */; };
+		701BAF09221570B90075D23A /* DNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701BAF08221570B90075D23A /* DNNavigationController.m */; };
 		7020040021EC7AC100E2B306 /* UIImage+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 702003FF21EC7AC100E2B306 /* UIImage+Extra.m */; };
 		7020040321EC7C1700E2B306 /* UIFont+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020040221EC7C1700E2B306 /* UIFont+Extra.m */; };
 		7020040621EC7CB500E2B306 /* UIScrollView+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020040521EC7CB500E2B306 /* UIScrollView+Extra.m */; };
@@ -35,6 +38,8 @@
 		707513B92213C0D000CC70E2 /* DNPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 707513B82213C0D000CC70E2 /* DNPhotoManager.m */; };
 		707513BC2213CC9C00CC70E2 /* DNImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 707513BB2213CC9C00CC70E2 /* DNImageModel.m */; };
 		7080269B22004258005AD4E8 /* DNDropBoxControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080269A22004258005AD4E8 /* DNDropBoxControl.m */; };
+		7091E378221A60BC008DB051 /* DNWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7091E377221A60BC008DB051 /* DNWebSocketManager.m */; };
+		7091E37B221A60DC008DB051 /* DNSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7091E37A221A60DC008DB051 /* DNSocketManager.m */; };
 		70B8110921F590BE0059A34E /* WudanHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B8110821F590BE0059A34E /* WudanHUD.m */; };
 		70D0A15621EDCB83009C260D /* DNBaseNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D0A15521EDCB83009C260D /* DNBaseNetWork.m */; };
 		70D1EA112212A54B00C1542B /* SecondeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D1EA102212A54B00C1542B /* SecondeViewController.m */; };
@@ -78,6 +83,12 @@
 		7004504D2214066800718E49 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		7016D65821F1729B0092C4C2 /* DNNavTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNNavTitleView.h; sourceTree = "<group>"; };
 		7016D65921F1729B0092C4C2 /* DNNavTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNNavTitleView.m; sourceTree = "<group>"; };
+		701BAF01221565110075D23A /* DNNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNNavigationBar.h; sourceTree = "<group>"; };
+		701BAF02221565110075D23A /* DNNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNNavigationBar.m; sourceTree = "<group>"; };
+		701BAF04221568470075D23A /* UIViewController+DNNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DNNavigationBar.h"; sourceTree = "<group>"; };
+		701BAF05221568470075D23A /* UIViewController+DNNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DNNavigationBar.m"; sourceTree = "<group>"; };
+		701BAF07221570B90075D23A /* DNNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNNavigationController.h; sourceTree = "<group>"; };
+		701BAF08221570B90075D23A /* DNNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNNavigationController.m; sourceTree = "<group>"; };
 		702003FC21EC77EB00E2B306 /* CustomHeadFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomHeadFile.h; sourceTree = "<group>"; };
 		702003FD21EC781700E2B306 /* LayoutHeadFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutHeadFile.h; sourceTree = "<group>"; };
 		702003FE21EC7AC100E2B306 /* UIImage+Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extra.h"; sourceTree = "<group>"; };
@@ -117,6 +128,10 @@
 		707513BB2213CC9C00CC70E2 /* DNImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNImageModel.m; sourceTree = "<group>"; };
 		7080269922004258005AD4E8 /* DNDropBoxControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNDropBoxControl.h; sourceTree = "<group>"; };
 		7080269A22004258005AD4E8 /* DNDropBoxControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNDropBoxControl.m; sourceTree = "<group>"; };
+		7091E376221A60BC008DB051 /* DNWebSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNWebSocketManager.h; sourceTree = "<group>"; };
+		7091E377221A60BC008DB051 /* DNWebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNWebSocketManager.m; sourceTree = "<group>"; };
+		7091E379221A60DC008DB051 /* DNSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSocketManager.h; sourceTree = "<group>"; };
+		7091E37A221A60DC008DB051 /* DNSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSocketManager.m; sourceTree = "<group>"; };
 		70B8110721F590BE0059A34E /* WudanHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WudanHUD.h; sourceTree = "<group>"; };
 		70B8110821F590BE0059A34E /* WudanHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WudanHUD.m; sourceTree = "<group>"; };
 		70D0A15421EDCB83009C260D /* DNBaseNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNBaseNetWork.h; sourceTree = "<group>"; };
@@ -240,6 +255,16 @@
 		7059879621EC748C009E6FC5 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				701BAF01221565110075D23A /* DNNavigationBar.h */,
+				701BAF02221565110075D23A /* DNNavigationBar.m */,
+				701BAF04221568470075D23A /* UIViewController+DNNavigationBar.h */,
+				701BAF05221568470075D23A /* UIViewController+DNNavigationBar.m */,
+				701BAF07221570B90075D23A /* DNNavigationController.h */,
+				701BAF08221570B90075D23A /* DNNavigationController.m */,
+				7091E379221A60DC008DB051 /* DNSocketManager.h */,
+				7091E37A221A60DC008DB051 /* DNSocketManager.m */,
+				7091E376221A60BC008DB051 /* DNWebSocketManager.h */,
+				7091E377221A60BC008DB051 /* DNWebSocketManager.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -541,15 +566,20 @@
 				707513B32213BC2700CC70E2 /* DNPhotoPickerCollectionCell.m in Sources */,
 				707513B62213BFA700CC70E2 /* DNPhotoPickerViewModel.m in Sources */,
 				707513B92213C0D000CC70E2 /* DNPhotoManager.m in Sources */,
+				701BAF09221570B90075D23A /* DNNavigationController.m in Sources */,
 				70E7419221F6DE46003DFD12 /* DNSpreadButton.m in Sources */,
 				7001C09021EED42600535562 /* WKWebView+Extra.m in Sources */,
 				705987A821EC748C009E6FC5 /* ViewController.m in Sources */,
+				7091E37B221A60DC008DB051 /* DNSocketManager.m in Sources */,
 				705987AB21EC748C009E6FC5 /* main.m in Sources */,
 				70D0A15621EDCB83009C260D /* DNBaseNetWork.m in Sources */,
+				701BAF06221568470075D23A /* UIViewController+DNNavigationBar.m in Sources */,
 				7020040021EC7AC100E2B306 /* UIImage+Extra.m in Sources */,
 				7001C08A21EEC6FA00535562 /* UIButton+Extra.m in Sources */,
+				701BAF03221565110075D23A /* DNNavigationBar.m in Sources */,
 				7016D65A21F1729B0092C4C2 /* DNNavTitleView.m in Sources */,
 				70B8110921F590BE0059A34E /* WudanHUD.m in Sources */,
+				7091E378221A60BC008DB051 /* DNWebSocketManager.m in Sources */,
 				7020040321EC7C1700E2B306 /* UIFont+Extra.m in Sources */,
 				70D1EA112212A54B00C1542B /* SecondeViewController.m in Sources */,
 				7020040621EC7CB500E2B306 /* UIScrollView+Extra.m in Sources */,

@@ -30,7 +30,7 @@
 - (void)initializationSubviews {
     
     self.dataImage = [[UIImageView alloc] init];
-    //self.dataImage.contentMode = UIViewContentModeScaleToFill;
+//    self.dataImage.contentMode = UIViewContentModeCenter;
     self.dataImage.contentMode = UIViewContentModeScaleAspectFit;
     
     self.chooseBtn = [[UIButton alloc] init];
