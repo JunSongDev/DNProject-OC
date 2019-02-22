@@ -10,7 +10,7 @@
 #import "DNNavigationBar.h"
 #import "UIViewController+DNNavigationBar.h"
 
-@interface DNNavigationController ()<UINavigationControllerDelegate, UIGestureRecognizerDelegate, UIViewControllerTransitionCoordinator>
+@interface DNNavigationController ()<UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIViewController *popVc;
 //@property (nonatomic, copy) NSKeyValueObservation *frameObserver;

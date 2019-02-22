@@ -15,12 +15,26 @@ static NSString  *const DNRangeKey = @"range";
 
 @implementation NSString (Extra)
 
-// @"(null)", @"null", nil, @"", @"  ", @"\n" will Returns NO; otherwise Returns YES.
-- (BOOL)dn_isValidString{
-    // 判断是否为空
-    if (self == nil || self.length == 0 ||
-        [self isEqual:[NSNull null]] || [self isEqualToString:@""] ||
-        [self isEqual:@"null"] || [self isEqual:@"(null)"]) {
+#pragma mark -- 是否为空字符串
+
+/**
+ @brief f是否为空字符串
+
+ @return YES 为空， NO 为非空
+ */
+- (BOOL)emptyString {
+    
+    if (self == NULL ||
+        (self == nil) ||
+        [self isEqual:NULL] ||
+        [self isEqual:@"NULL"] ||
+        [self isEqualToString:@""] ||
+        [self isEqualToString:@"<null>"] ||
+        [self isEqualToString:@"(null)"] ||
+        [self isKindOfClass:[NSNull class]] ||
+        (![self isKindOfClass:[NSString class]]) ||
+        [[self class] isSubclassOfClass:[NSNull class]] ||
+        [[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0) {
         
         return YES;
     }

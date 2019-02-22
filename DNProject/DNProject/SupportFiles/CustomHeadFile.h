@@ -16,6 +16,7 @@
 #define DNLog(...);
 #endif
 
+#define weak(name) __weak typeof(name) weakself = name;
 
 
 #endif /* CustomHeadFile_h */

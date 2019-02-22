@@ -246,6 +246,10 @@
 		7059879521EC748C009E6FC5 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				7091E379221A60DC008DB051 /* DNSocketManager.h */,
+				7091E37A221A60DC008DB051 /* DNSocketManager.m */,
+				7091E376221A60BC008DB051 /* DNWebSocketManager.h */,
+				7091E377221A60BC008DB051 /* DNWebSocketManager.m */,
 				70D0A15421EDCB83009C260D /* DNBaseNetWork.h */,
 				70D0A15521EDCB83009C260D /* DNBaseNetWork.m */,
 			);
@@ -261,10 +265,6 @@
 				701BAF05221568470075D23A /* UIViewController+DNNavigationBar.m */,
 				701BAF07221570B90075D23A /* DNNavigationController.h */,
 				701BAF08221570B90075D23A /* DNNavigationController.m */,
-				7091E379221A60DC008DB051 /* DNSocketManager.h */,
-				7091E37A221A60DC008DB051 /* DNSocketManager.m */,
-				7091E376221A60BC008DB051 /* DNWebSocketManager.h */,
-				7091E377221A60BC008DB051 /* DNWebSocketManager.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -805,6 +805,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MERPXG389L;
 				INFOPLIST_FILE = DNProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -823,6 +824,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MERPXG389L;
 				INFOPLIST_FILE = DNProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -840,6 +842,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MERPXG389L;
 				INFOPLIST_FILE = DNProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -857,6 +860,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MERPXG389L;
 				INFOPLIST_FILE = DNProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

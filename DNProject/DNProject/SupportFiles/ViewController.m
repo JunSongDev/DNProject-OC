@@ -72,6 +72,16 @@
        
         make.edges.mas_equalTo(self.view);
     }];
+    
+    /*
+     
+     delegate:
+        代理，首先是一种协议，想要响应代理的方法必须遵守且实现这个协议
+     NSNotication:
+        通知，一对多，由通知中心发出一个通知，多个对象可以接收并作出对应的响应
+     KVO
+        观察者模式，对某个值或某个对象的变化进行监听，当改变时作出对应的处理
+     */
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -95,7 +105,6 @@
     
     if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
         
-        DNLog(@"3D Touch 可用");
         [self registerForPreviewingWithDelegate:self sourceView:cell];
     } else {
         
@@ -192,8 +201,8 @@
 - (void)showSharePreview {
     
     NSArray *array = @[@"哈哈哈",
-                       [UIImage imageNamed:@"test"],
-                       [NSURL URLWithString:@"https://www.baidu.com"]];
+                       [NSURL URLWithString:@"https://www.baidu.com"],
+                       [UIImage imageNamed:@"test"]];
     UIActivityViewController *activity = [[UIActivityViewController alloc] initWithActivityItems:array
                                                                            applicationActivities:nil];
     //UIActivityTypeMarkupAsPDF是在iOS 11.0 之后才有的

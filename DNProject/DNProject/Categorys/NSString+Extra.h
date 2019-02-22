@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, StringRangeFormat) {
 @interface NSString (Extra)
 
 /** 判断是否是有效的(非空/非空白)字符串 */
-- (BOOL)dn_isValidString;
+- (BOOL)emptyString;
 
 /** 判断是否包含指定字符串 */
 - (BOOL)dn_containsString:(NSString *)string;
