@@ -11,6 +11,7 @@
 #import "DNAlbumListController.h"
 #import "DNPhotoPickerController.h"
 #import "DNPageViewController.h"
+#import "DNInputView.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UIViewControllerPreviewingDelegate, UISearchControllerDelegate, SecondVcDelegate>
 
@@ -42,6 +43,17 @@
     self.title = @"Project";
     self.view.backgroundColor = UIColor.whiteColor;
     
+    DNInputView *userName = [[DNInputView alloc] init];
+    userName.placeholder = @"请输入用户名";
+    userName.maxLength = 20;
+    
+    [self.view addSubview:userName];
+    [userName mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.top.mas_equalTo(self.view.mas_top).inset(100);
+        make.left.right.mas_equalTo(self.view).inset(50);
+    }];
+    
 //    // 创建队列组
 //    dispatch_group_t group = dispatch_group_create();
 //    // 创建信号量，并且设置值为10
@@ -64,6 +76,11 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"left" style:UIBarButtonItemStylePlain target:self action:@selector(jump)];
     
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [self.view endEditing:YES];
 }
 
 - (void)jump {
@@ -213,7 +230,6 @@
         NSLog(@"------------- 收藏");
     } else {
         
-        NSLog(@"------------- 分享");
         [self showSharePreview];
     }
 }
