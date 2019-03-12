@@ -24,7 +24,7 @@
 #pragma mark -- 初始化
 - (instancetype)initFormView:(UIView *)fromView direction:(DNDropBoxControlDirection)direction {
     
-    self = [super init];
+    self = [super initWithFrame:CGRectZero];
     if (self) {
         
         _sourceView = fromView;

@@ -24,6 +24,10 @@
 		7020040021EC7AC100E2B306 /* UIImage+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 702003FF21EC7AC100E2B306 /* UIImage+Extra.m */; };
 		7020040321EC7C1700E2B306 /* UIFont+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020040221EC7C1700E2B306 /* UIFont+Extra.m */; };
 		7020040621EC7CB500E2B306 /* UIScrollView+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020040521EC7CB500E2B306 /* UIScrollView+Extra.m */; };
+		7028C0282230E7E700EFC547 /* UIViewController+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7028C0272230E7E700EFC547 /* UIViewController+Extra.m */; };
+		7028C02E2230EC6700EFC547 /* DNAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7028C02D2230EC6700EFC547 /* DNAlertView.m */; };
+		70516F012230A99500051C0A /* DNPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70516F002230A99500051C0A /* DNPageViewController.m */; };
+		70516F042230B07800051C0A /* PageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70516F032230B07800051C0A /* PageTestViewController.m */; };
 		7059877D21EC740A009E6FC5 /* DNProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059877C21EC740A009E6FC5 /* DNProjectTests.m */; };
 		7059878821EC740A009E6FC5 /* DNProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059878721EC740A009E6FC5 /* DNProjectUITests.m */; };
 		705987A621EC748C009E6FC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059879A21EC748C009E6FC5 /* AppDelegate.m */; };
@@ -32,6 +36,7 @@
 		705987A921EC748C009E6FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7059879E21EC748C009E6FC5 /* LaunchScreen.storyboard */; };
 		705987AA21EC748C009E6FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705987A021EC748C009E6FC5 /* Main.storyboard */; };
 		705987AB21EC748C009E6FC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 705987A221EC748C009E6FC5 /* main.m */; };
+		70598C3722238DC300798E08 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70598C3622238DC300798E08 /* TestModel.m */; };
 		707513AF2213BA9000CC70E2 /* DNPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707513AE2213BA9000CC70E2 /* DNPhotoPickerController.m */; };
 		707513B32213BC2700CC70E2 /* DNPhotoPickerCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 707513B22213BC2700CC70E2 /* DNPhotoPickerCollectionCell.m */; };
 		707513B62213BFA700CC70E2 /* DNPhotoPickerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 707513B52213BFA700CC70E2 /* DNPhotoPickerViewModel.m */; };
@@ -41,6 +46,9 @@
 		7091E378221A60BC008DB051 /* DNWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7091E377221A60BC008DB051 /* DNWebSocketManager.m */; };
 		7091E37B221A60DC008DB051 /* DNSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7091E37A221A60DC008DB051 /* DNSocketManager.m */; };
 		70B8110921F590BE0059A34E /* WudanHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B8110821F590BE0059A34E /* WudanHUD.m */; };
+		70BFAA9B223650960055F4B1 /* DNDebugConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70BFAA9A223650960055F4B1 /* DNDebugConfig.xcconfig */; };
+		70BFAA9E223650BA0055F4B1 /* DNReleaseConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70BFAA9D223650BA0055F4B1 /* DNReleaseConfig.xcconfig */; };
+		70BFAAA0223650C50055F4B1 /* DNCommonConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70BFAA9F223650C50055F4B1 /* DNCommonConfig.xcconfig */; };
 		70D0A15621EDCB83009C260D /* DNBaseNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D0A15521EDCB83009C260D /* DNBaseNetWork.m */; };
 		70D1EA112212A54B00C1542B /* SecondeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D1EA102212A54B00C1542B /* SecondeViewController.m */; };
 		70E7419221F6DE46003DFD12 /* DNSpreadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E7419121F6DE46003DFD12 /* DNSpreadButton.m */; };
@@ -97,7 +105,15 @@
 		7020040221EC7C1700E2B306 /* UIFont+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extra.m"; sourceTree = "<group>"; };
 		7020040421EC7CB500E2B306 /* UIScrollView+Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extra.h"; sourceTree = "<group>"; };
 		7020040521EC7CB500E2B306 /* UIScrollView+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extra.m"; sourceTree = "<group>"; };
+		7028C0262230E7E700EFC547 /* UIViewController+Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extra.h"; sourceTree = "<group>"; };
+		7028C0272230E7E700EFC547 /* UIViewController+Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extra.m"; sourceTree = "<group>"; };
+		7028C02C2230EC6700EFC547 /* DNAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAlertView.h; sourceTree = "<group>"; };
+		7028C02D2230EC6700EFC547 /* DNAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAlertView.m; sourceTree = "<group>"; };
 		7028F86A21F1B58800F79389 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		70516EFF2230A99500051C0A /* DNPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPageViewController.h; sourceTree = "<group>"; };
+		70516F002230A99500051C0A /* DNPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNPageViewController.m; sourceTree = "<group>"; };
+		70516F022230B07800051C0A /* PageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageTestViewController.h; sourceTree = "<group>"; };
+		70516F032230B07800051C0A /* PageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageTestViewController.m; sourceTree = "<group>"; };
 		7059876021EC7409009E6FC5 /* DNProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7059877821EC740A009E6FC5 /* DNProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7059877C21EC740A009E6FC5 /* DNProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNProjectTests.m; sourceTree = "<group>"; };
@@ -116,6 +132,8 @@
 		705987A421EC748C009E6FC5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		705987AE21EC7620009E6FC5 /* DNProjectPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNProjectPrefix.pch; sourceTree = "<group>"; };
 		705987AF21EC7691009E6FC5 /* PodsHeadFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsHeadFile.h; sourceTree = "<group>"; };
+		70598C3522238DC300798E08 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		70598C3622238DC300798E08 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		707513AD2213BA9000CC70E2 /* DNPhotoPickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPhotoPickerController.h; sourceTree = "<group>"; };
 		707513AE2213BA9000CC70E2 /* DNPhotoPickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNPhotoPickerController.m; sourceTree = "<group>"; };
 		707513B12213BC2700CC70E2 /* DNPhotoPickerCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPhotoPickerCollectionCell.h; sourceTree = "<group>"; };
@@ -132,8 +150,12 @@
 		7091E377221A60BC008DB051 /* DNWebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNWebSocketManager.m; sourceTree = "<group>"; };
 		7091E379221A60DC008DB051 /* DNSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSocketManager.h; sourceTree = "<group>"; };
 		7091E37A221A60DC008DB051 /* DNSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSocketManager.m; sourceTree = "<group>"; };
+		70AC148322265F8A0059FD3E /* Documents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Documents.h; sourceTree = "<group>"; };
 		70B8110721F590BE0059A34E /* WudanHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WudanHUD.h; sourceTree = "<group>"; };
 		70B8110821F590BE0059A34E /* WudanHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WudanHUD.m; sourceTree = "<group>"; };
+		70BFAA9A223650960055F4B1 /* DNDebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DNDebugConfig.xcconfig; sourceTree = "<group>"; };
+		70BFAA9D223650BA0055F4B1 /* DNReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DNReleaseConfig.xcconfig; sourceTree = "<group>"; };
+		70BFAA9F223650C50055F4B1 /* DNCommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DNCommonConfig.xcconfig; sourceTree = "<group>"; };
 		70D0A15421EDCB83009C260D /* DNBaseNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNBaseNetWork.h; sourceTree = "<group>"; };
 		70D0A15521EDCB83009C260D /* DNBaseNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNBaseNetWork.m; sourceTree = "<group>"; };
 		70D1EA0F2212A54B00C1542B /* SecondeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondeViewController.h; sourceTree = "<group>"; };
@@ -279,6 +301,8 @@
 				709FA5A221F5567D00248D07 /* DNNavTitleView */,
 				70D1EA0E22129DB100C1542B /* DropBox */,
 				707513B02213BBC800CC70E2 /* DNPhotoPickerView */,
+				7028C02C2230EC6700EFC547 /* DNAlertView.h */,
+				7028C02D2230EC6700EFC547 /* DNAlertView.m */,
 			);
 			path = ThirdPart;
 			sourceTree = "<group>";
@@ -308,6 +332,16 @@
 				702003FC21EC77EB00E2B306 /* CustomHeadFile.h */,
 				70D1EA0F2212A54B00C1542B /* SecondeViewController.h */,
 				70D1EA102212A54B00C1542B /* SecondeViewController.m */,
+				70598C3522238DC300798E08 /* TestModel.h */,
+				70598C3622238DC300798E08 /* TestModel.m */,
+				70AC148322265F8A0059FD3E /* Documents.h */,
+				70516EFF2230A99500051C0A /* DNPageViewController.h */,
+				70516F002230A99500051C0A /* DNPageViewController.m */,
+				70516F022230B07800051C0A /* PageTestViewController.h */,
+				70516F032230B07800051C0A /* PageTestViewController.m */,
+				70BFAA9A223650960055F4B1 /* DNDebugConfig.xcconfig */,
+				70BFAA9D223650BA0055F4B1 /* DNReleaseConfig.xcconfig */,
+				70BFAA9F223650C50055F4B1 /* DNCommonConfig.xcconfig */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -338,6 +372,8 @@
 				7001C08F21EED42600535562 /* WKWebView+Extra.m */,
 				7001C09121EED4A500535562 /* UIImageView+Extra.h */,
 				7001C09221EED4A500535562 /* UIImageView+Extra.m */,
+				7028C0262230E7E700EFC547 /* UIViewController+Extra.h */,
+				7028C0272230E7E700EFC547 /* UIViewController+Extra.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -497,9 +533,12 @@
 			files = (
 				705987AA21EC748C009E6FC5 /* Main.storyboard in Resources */,
 				705987A721EC748C009E6FC5 /* Assets.xcassets in Resources */,
+				70BFAA9B223650960055F4B1 /* DNDebugConfig.xcconfig in Resources */,
 				7004504E2214066800718E49 /* back@2x.png in Resources */,
 				7004504C221405EB00718E49 /* choosePhoto@2x.png in Resources */,
 				705987A921EC748C009E6FC5 /* LaunchScreen.storyboard in Resources */,
+				70BFAA9E223650BA0055F4B1 /* DNReleaseConfig.xcconfig in Resources */,
+				70BFAAA0223650C50055F4B1 /* DNCommonConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +605,7 @@
 				707513B32213BC2700CC70E2 /* DNPhotoPickerCollectionCell.m in Sources */,
 				707513B62213BFA700CC70E2 /* DNPhotoPickerViewModel.m in Sources */,
 				707513B92213C0D000CC70E2 /* DNPhotoManager.m in Sources */,
+				70516F012230A99500051C0A /* DNPageViewController.m in Sources */,
 				701BAF09221570B90075D23A /* DNNavigationController.m in Sources */,
 				70E7419221F6DE46003DFD12 /* DNSpreadButton.m in Sources */,
 				7001C09021EED42600535562 /* WKWebView+Extra.m in Sources */,
@@ -577,13 +617,17 @@
 				7020040021EC7AC100E2B306 /* UIImage+Extra.m in Sources */,
 				7001C08A21EEC6FA00535562 /* UIButton+Extra.m in Sources */,
 				701BAF03221565110075D23A /* DNNavigationBar.m in Sources */,
+				70516F042230B07800051C0A /* PageTestViewController.m in Sources */,
 				7016D65A21F1729B0092C4C2 /* DNNavTitleView.m in Sources */,
+				7028C02E2230EC6700EFC547 /* DNAlertView.m in Sources */,
 				70B8110921F590BE0059A34E /* WudanHUD.m in Sources */,
 				7091E378221A60BC008DB051 /* DNWebSocketManager.m in Sources */,
 				7020040321EC7C1700E2B306 /* UIFont+Extra.m in Sources */,
 				70D1EA112212A54B00C1542B /* SecondeViewController.m in Sources */,
+				7028C0282230E7E700EFC547 /* UIViewController+Extra.m in Sources */,
 				7020040621EC7CB500E2B306 /* UIScrollView+Extra.m in Sources */,
 				707513AF2213BA9000CC70E2 /* DNPhotoPickerController.m in Sources */,
+				70598C3722238DC300798E08 /* TestModel.m in Sources */,
 				7001C09321EED4A500535562 /* UIImageView+Extra.m in Sources */,
 				700450442213E84D00718E49 /* DNAlbumLisetCell.m in Sources */,
 				700450412213E3CC00718E49 /* DNAlbumListController.m in Sources */,
@@ -768,7 +812,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DNProject/SupportFiles/DNProjectPrefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/DNProject/SupportFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -789,7 +833,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DNProject/SupportFiles/DNProjectPrefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/DNProject/SupportFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

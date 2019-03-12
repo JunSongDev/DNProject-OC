@@ -10,18 +10,31 @@
 #import "SecondeViewController.h"
 #import "DNAlbumListController.h"
 #import "DNPhotoPickerController.h"
+#import "DNPageViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UIViewControllerPreviewingDelegate, UISearchControllerDelegate, SecondVcDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) UISearchController *searchController;
+
+@property (nonatomic, strong) DNPageViewController *pageVc;
 //数据源
 @property (nonatomic, strong) NSMutableArray *dataList;
 @property (nonatomic, strong) NSMutableArray *searchList;
+
+@property (nonatomic, copy) NSString *name;
+
+@property (nonatomic, copy) NSMutableArray *array;
 @end
 
 @implementation ViewController
+
+// 通知编译器不要自动生成实例变量,setter和getter
+//@dynamic name;
+
+// 关联实例变量_name到属性name上，即属性name生成的实例变量名为_name
+@synthesize name = __name;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,10 +42,43 @@
     self.title = @"Project";
     self.view.backgroundColor = UIColor.whiteColor;
     
-    [self addSubviewsForSuper];
+//    // 创建队列组
+//    dispatch_group_t group = dispatch_group_create();
+//    // 创建信号量，并且设置值为10
+//    dispatch_semaphore_t semaphore = dispatch_semaphore_create(5);
+//    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+//    //dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//
+//    for (int i = 0; i < 20; i++) {
+//        // 由于是异步执行的，所以每次循环Block里面的dispatch_semaphore_signal根本还没有执行就会执行dispatch_semaphore_wait，从而semaphore-1.当循环10此后，semaphore等于0，则会阻塞线程，直到执行了Block的dispatch_semaphore_signal 才会继续执行
+//        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+//        dispatch_group_async(group, queue, ^{
+//            NSLog(@"%i",i);
+//            sleep(2);
+//            // 每次发送信号则semaphore会+1，
+//            dispatch_semaphore_signal(semaphore);
+//        });
+//    }
+//    [self addSubviewsForSuper];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"left" style:UIBarButtonItemStylePlain target:self action:@selector(jump)];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (void)jump {
+    
+    [self.navigationController pushViewController:self.pageVc animated:YES];
+}
+
+- (DNPageViewController *)pageVc {
+    
+    if (!_pageVc) {
+        _pageVc = [[DNPageViewController alloc] init];
+    }
+    return _pageVc;
+}
+
 - (void)addSubviewsForSuper {
     
     self.tableView = [[UITableView alloc] init];
@@ -48,24 +94,18 @@
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     
-    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    self.searchController.delegate = self;
-    self.searchController.searchResultsUpdater = self;
-    //设置UISearchController的显示属性，以下3个属性默认为YES
-    //搜索时，背景变暗色
-    self.searchController.dimsBackgroundDuringPresentation = YES;
-    //搜索时，背景变模糊
-    self.searchController.obscuresBackgroundDuringPresentation = YES;
-    //隐藏导航栏
-    self.searchController.hidesNavigationBarDuringPresentation = YES;
-    
-    self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x,
-                                                       self.searchController.searchBar.frame.origin.y,
-                                                       self.searchController.searchBar.frame.size.width,
-                                                       44.0);
-    
-    // 添加 searchbar 到 headerview
-    self.tableView.tableHeaderView = self.searchController.searchBar;
+//    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+//    self.searchController.delegate = self;
+//    self.searchController.searchResultsUpdater = self;
+//    //设置UISearchController的显示属性，以下3个属性默认为YES
+//    //搜索时，背景变暗色
+//    self.searchController.dimsBackgroundDuringPresentation = YES;
+//    //搜索时，背景变模糊
+//    self.searchController.obscuresBackgroundDuringPresentation = YES;
+//    //隐藏导航栏
+//    self.searchController.hidesNavigationBarDuringPresentation = YES;
+//    // 添加 searchbar 到 headerview
+//    self.tableView.tableHeaderView = self.searchController.searchBar;
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -81,6 +121,7 @@
         通知，一对多，由通知中心发出一个通知，多个对象可以接收并作出对应的响应
      KVO
         观察者模式，对某个值或某个对象的变化进行监听，当改变时作出对应的处理
+        当第一次观察某个对象时，runtime 会创建一个继承与被观察类的子类，在这个子类中，会重写被观察的 key，然后将对象的 isa 指针指向子类，所以对象就成了新建对象的实例，在被重写的方法中添加了调用通知观察者的方法，然后当一个属性变化时，就会触发 setter 方法，但是这个方法被重写了，内部添加了发送通知的机制，从而激活键值通知机制，此外新的子类还重写了 dealloc 方法释放资源
      */
 }
 

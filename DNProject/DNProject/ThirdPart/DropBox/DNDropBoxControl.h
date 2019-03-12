@@ -46,6 +46,10 @@ typedef NS_ENUM(NSInteger, DNDropBoxControlDirection) {
 
 - (void)showBoxControl;
 
+- (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
+
 - (instancetype)initFormView:(UIView *)fromView direction:(DNDropBoxControlDirection)direction NS_DESIGNATED_INITIALIZER;
 
 @end

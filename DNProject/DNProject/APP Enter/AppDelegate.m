@@ -34,7 +34,7 @@
     
     application.shortcutItems = @[firstItem,secondItem];
     
-    [[DNWebSocketManager defaultManager] connectServer];
+//    [[DNWebSocketManager defaultManager] connectServer];
     
     return YES;
 }
