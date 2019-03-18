@@ -27,6 +27,7 @@
 		7020040621EC7CB500E2B306 /* UIScrollView+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020040521EC7CB500E2B306 /* UIScrollView+Extra.m */; };
 		7028C0282230E7E700EFC547 /* UIViewController+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 7028C0272230E7E700EFC547 /* UIViewController+Extra.m */; };
 		7028C02E2230EC6700EFC547 /* DNAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7028C02D2230EC6700EFC547 /* DNAlertView.m */; };
+		703F56DA223F6F3B00FDAF61 /* DNTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703F56D9223F6F3B00FDAF61 /* DNTestCollectionViewCell.m */; };
 		70516F012230A99500051C0A /* DNPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70516F002230A99500051C0A /* DNPageViewController.m */; };
 		70516F042230B07800051C0A /* PageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70516F032230B07800051C0A /* PageTestViewController.m */; };
 		7059877D21EC740A009E6FC5 /* DNProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7059877C21EC740A009E6FC5 /* DNProjectTests.m */; };
@@ -126,6 +127,8 @@
 		7028C02C2230EC6700EFC547 /* DNAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAlertView.h; sourceTree = "<group>"; };
 		7028C02D2230EC6700EFC547 /* DNAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAlertView.m; sourceTree = "<group>"; };
 		7028F86A21F1B58800F79389 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		703F56D8223F6F3B00FDAF61 /* DNTestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTestCollectionViewCell.h; sourceTree = "<group>"; };
+		703F56D9223F6F3B00FDAF61 /* DNTestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTestCollectionViewCell.m; sourceTree = "<group>"; };
 		70516EFF2230A99500051C0A /* DNPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPageViewController.h; sourceTree = "<group>"; };
 		70516F002230A99500051C0A /* DNPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNPageViewController.m; sourceTree = "<group>"; };
 		70516F022230B07800051C0A /* PageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageTestViewController.h; sourceTree = "<group>"; };
@@ -380,6 +383,8 @@
 				700FC47A2239FEEB00944E69 /* TestViewController.m */,
 				709847DD223A23C6001A8A8D /* DNCollectionViewFlowLayout.h */,
 				709847DE223A23C6001A8A8D /* DNCollectionViewFlowLayout.m */,
+				703F56D8223F6F3B00FDAF61 /* DNTestCollectionViewCell.h */,
+				703F56D9223F6F3B00FDAF61 /* DNTestCollectionViewCell.m */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				70E7419221F6DE46003DFD12 /* DNSpreadButton.m in Sources */,
 				7001C09021EED42600535562 /* WKWebView+Extra.m in Sources */,
 				705987A821EC748C009E6FC5 /* ViewController.m in Sources */,
+				703F56DA223F6F3B00FDAF61 /* DNTestCollectionViewCell.m in Sources */,
 				7091E37B221A60DC008DB051 /* DNSocketManager.m in Sources */,
 				705987AB21EC748C009E6FC5 /* main.m in Sources */,
 				70D0A15621EDCB83009C260D /* DNBaseNetWork.m in Sources */,

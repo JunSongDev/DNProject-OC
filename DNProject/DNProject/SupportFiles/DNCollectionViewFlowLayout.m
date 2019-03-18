@@ -77,12 +77,6 @@
     return temp;
 }
 
-- (NSInteger)num:(NSInteger)num numt:(NSInteger)numt {
-    
-    return num < numt ? num : numt;
-}
-
-
 - (CGSize)collectionViewContentSize {
     return CGSizeMake(1,
                       _currentY + _itemHeight + _sectionInsets.bottom);
