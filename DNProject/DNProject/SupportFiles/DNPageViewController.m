@@ -26,8 +26,6 @@
 
 @property (nonatomic, strong) UISegmentedControl *segmentView;
 
-@property (nonatomic, strong) NSMutableArray *scrollArr;
-
 @property (nonatomic, assign) CGFloat headerView_H;
 
 @property (nonatomic,   copy) NSArray *vcArray;
@@ -90,7 +88,6 @@
                     
                 }
                 [scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
-                [self.scrollArr addObject:scrollView];
             }
         }
     }
@@ -203,18 +200,9 @@
     self.cuurentVc = self.vcArray[sender.selectedSegmentIndex];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    
-    [super viewWillDisappear:animated];
-    
-    [self.scrollArr enumerateObjectsUsingBlock:^(UIScrollView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        [obj removeObserver:self forKeyPath:@"contentOffset"];
-    }];
-}
-
 - (void)dealloc {
     
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     NSLog(@"%s",__func__);
 }
 

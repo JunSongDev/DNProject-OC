@@ -11,7 +11,8 @@
 #import "DNAlbumListController.h"
 #import "DNPhotoPickerController.h"
 #import "DNPageViewController.h"
-#import "DNInputView.h"
+#import "TestViewController.h"
+#import "NSString+Extra.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UIViewControllerPreviewingDelegate, UISearchControllerDelegate, SecondVcDelegate>
 
@@ -43,16 +44,9 @@
     self.title = @"Project";
     self.view.backgroundColor = UIColor.whiteColor;
     
-    DNInputView *userName = [[DNInputView alloc] init];
-    userName.placeholder = @"请输入用户名";
-    userName.maxLength = 20;
-    
-    [self.view addSubview:userName];
-    [userName mas_makeConstraints:^(MASConstraintMaker *make) {
-       
-        make.top.mas_equalTo(self.view.mas_top).inset(100);
-        make.left.right.mas_equalTo(self.view).inset(50);
-    }];
+    NSString *str = [@"340123199610103111" dn_calculationAge];
+
+    NSLog(@"--------------------> %@", str);
     
 //    // 创建队列组
 //    dispatch_group_t group = dispatch_group_create();

@@ -17,6 +17,7 @@
 		700450442213E84D00718E49 /* DNAlbumLisetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 700450432213E84D00718E49 /* DNAlbumLisetCell.m */; };
 		7004504C221405EB00718E49 /* choosePhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7004504B221405EB00718E49 /* choosePhoto@2x.png */; };
 		7004504E2214066800718E49 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7004504D2214066800718E49 /* back@2x.png */; };
+		700FC47B2239FEEB00944E69 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700FC47A2239FEEB00944E69 /* TestViewController.m */; };
 		7016D65A21F1729B0092C4C2 /* DNNavTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7016D65921F1729B0092C4C2 /* DNNavTitleView.m */; };
 		701BAF03221565110075D23A /* DNNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 701BAF02221565110075D23A /* DNNavigationBar.m */; };
 		701BAF06221568470075D23A /* UIViewController+DNNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 701BAF05221568470075D23A /* UIViewController+DNNavigationBar.m */; };
@@ -45,11 +46,9 @@
 		7080269B22004258005AD4E8 /* DNDropBoxControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080269A22004258005AD4E8 /* DNDropBoxControl.m */; };
 		7091E378221A60BC008DB051 /* DNWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7091E377221A60BC008DB051 /* DNWebSocketManager.m */; };
 		7091E37B221A60DC008DB051 /* DNSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7091E37A221A60DC008DB051 /* DNSocketManager.m */; };
+		709847DF223A23C6001A8A8D /* DNCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 709847DE223A23C6001A8A8D /* DNCollectionViewFlowLayout.m */; };
 		70B8110921F590BE0059A34E /* WudanHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B8110821F590BE0059A34E /* WudanHUD.m */; };
 		70BEF0DC22375FC40091C997 /* DNInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BEF0DB22375FC40091C997 /* DNInputView.m */; };
-		70BFAA9B223650960055F4B1 /* DNDebugConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70BFAA9A223650960055F4B1 /* DNDebugConfig.xcconfig */; };
-		70BFAA9E223650BA0055F4B1 /* DNReleaseConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70BFAA9D223650BA0055F4B1 /* DNReleaseConfig.xcconfig */; };
-		70BFAAA0223650C50055F4B1 /* DNCommonConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70BFAA9F223650C50055F4B1 /* DNCommonConfig.xcconfig */; };
 		70D0A15621EDCB83009C260D /* DNBaseNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D0A15521EDCB83009C260D /* DNBaseNetWork.m */; };
 		70D1EA112212A54B00C1542B /* SecondeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D1EA102212A54B00C1542B /* SecondeViewController.m */; };
 		70E7419221F6DE46003DFD12 /* DNSpreadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E7419121F6DE46003DFD12 /* DNSpreadButton.m */; };
@@ -64,6 +63,20 @@
 			remoteInfo = DNProject;
 		};
 		7059878421EC740A009E6FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7059875821EC7409009E6FC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7059875F21EC7409009E6FC5;
+			remoteInfo = DNProject;
+		};
+		70EB32722238B0D400663325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7059875821EC7409009E6FC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7059875F21EC7409009E6FC5;
+			remoteInfo = DNProject;
+		};
+		70EB32802238B0FB00663325 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7059875821EC7409009E6FC5 /* Project object */;
 			proxyType = 1;
@@ -90,6 +103,8 @@
 		700450432213E84D00718E49 /* DNAlbumLisetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAlbumLisetCell.m; sourceTree = "<group>"; };
 		7004504B221405EB00718E49 /* choosePhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choosePhoto@2x.png"; sourceTree = "<group>"; };
 		7004504D2214066800718E49 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		700FC4792239FEEB00944E69 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		700FC47A2239FEEB00944E69 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		7016D65821F1729B0092C4C2 /* DNNavTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNNavTitleView.h; sourceTree = "<group>"; };
 		7016D65921F1729B0092C4C2 /* DNNavTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNNavTitleView.m; sourceTree = "<group>"; };
 		701BAF01221565110075D23A /* DNNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNNavigationBar.h; sourceTree = "<group>"; };
@@ -151,20 +166,21 @@
 		7091E377221A60BC008DB051 /* DNWebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNWebSocketManager.m; sourceTree = "<group>"; };
 		7091E379221A60DC008DB051 /* DNSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSocketManager.h; sourceTree = "<group>"; };
 		7091E37A221A60DC008DB051 /* DNSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSocketManager.m; sourceTree = "<group>"; };
+		709847DD223A23C6001A8A8D /* DNCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		709847DE223A23C6001A8A8D /* DNCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		70AC148322265F8A0059FD3E /* Documents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Documents.h; sourceTree = "<group>"; };
 		70B8110721F590BE0059A34E /* WudanHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WudanHUD.h; sourceTree = "<group>"; };
 		70B8110821F590BE0059A34E /* WudanHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WudanHUD.m; sourceTree = "<group>"; };
 		70BEF0DA22375FC40091C997 /* DNInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNInputView.h; sourceTree = "<group>"; };
 		70BEF0DB22375FC40091C997 /* DNInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNInputView.m; sourceTree = "<group>"; };
-		70BFAA9A223650960055F4B1 /* DNDebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DNDebugConfig.xcconfig; sourceTree = "<group>"; };
-		70BFAA9D223650BA0055F4B1 /* DNReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DNReleaseConfig.xcconfig; sourceTree = "<group>"; };
-		70BFAA9F223650C50055F4B1 /* DNCommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DNCommonConfig.xcconfig; sourceTree = "<group>"; };
 		70D0A15421EDCB83009C260D /* DNBaseNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNBaseNetWork.h; sourceTree = "<group>"; };
 		70D0A15521EDCB83009C260D /* DNBaseNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNBaseNetWork.m; sourceTree = "<group>"; };
 		70D1EA0F2212A54B00C1542B /* SecondeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondeViewController.h; sourceTree = "<group>"; };
 		70D1EA102212A54B00C1542B /* SecondeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondeViewController.m; sourceTree = "<group>"; };
 		70E7419021F6DE46003DFD12 /* DNSpreadButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSpreadButton.h; sourceTree = "<group>"; };
 		70E7419121F6DE46003DFD12 /* DNSpreadButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSpreadButton.m; sourceTree = "<group>"; };
+		70EB326D2238B0D400663325 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70EB327B2238B0FB00663325 /* DNProjectTestBundle.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNProjectTestBundle.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		945CD253598344EFF0DB8B14 /* Pods-DNProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNProject/Pods-DNProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D8C2FDBB2B5C3D5AAE5C9687 /* Pods-DNProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNProject/Pods-DNProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +202,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7059878021EC740A009E6FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EB326A2238B0D400663325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EB32782238B0FB00663325 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,6 +261,8 @@
 				7059876021EC7409009E6FC5 /* DNProject.app */,
 				7059877821EC740A009E6FC5 /* DNProjectTests.xctest */,
 				7059878321EC740A009E6FC5 /* DNProjectUITests.xctest */,
+				70EB326D2238B0D400663325 /* Tests.xctest */,
+				70EB327B2238B0FB00663325 /* DNProjectTestBundle.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,9 +376,10 @@
 				70516F002230A99500051C0A /* DNPageViewController.m */,
 				70516F022230B07800051C0A /* PageTestViewController.h */,
 				70516F032230B07800051C0A /* PageTestViewController.m */,
-				70BFAA9A223650960055F4B1 /* DNDebugConfig.xcconfig */,
-				70BFAA9D223650BA0055F4B1 /* DNReleaseConfig.xcconfig */,
-				70BFAA9F223650C50055F4B1 /* DNCommonConfig.xcconfig */,
+				700FC4792239FEEB00944E69 /* TestViewController.h */,
+				700FC47A2239FEEB00944E69 /* TestViewController.m */,
+				709847DD223A23C6001A8A8D /* DNCollectionViewFlowLayout.h */,
+				709847DE223A23C6001A8A8D /* DNCollectionViewFlowLayout.m */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -489,6 +522,42 @@
 			productReference = 7059878321EC740A009E6FC5 /* DNProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		70EB326C2238B0D400663325 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70EB32742238B0D400663325 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				70EB32692238B0D400663325 /* Sources */,
+				70EB326A2238B0D400663325 /* Frameworks */,
+				70EB326B2238B0D400663325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70EB32732238B0D400663325 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 70EB326D2238B0D400663325 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70EB327A2238B0FB00663325 /* DNProjectTestBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70EB32822238B0FB00663325 /* Build configuration list for PBXNativeTarget "DNProjectTestBundle" */;
+			buildPhases = (
+				70EB32772238B0FB00663325 /* Sources */,
+				70EB32782238B0FB00663325 /* Frameworks */,
+				70EB32792238B0FB00663325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70EB32812238B0FB00663325 /* PBXTargetDependency */,
+			);
+			name = DNProjectTestBundle;
+			productName = DNProjectTestBundle;
+			productReference = 70EB327B2238B0FB00663325 /* DNProjectTestBundle.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -506,6 +575,14 @@
 						TestTargetID = 7059875F21EC7409009E6FC5;
 					};
 					7059878221EC740A009E6FC5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7059875F21EC7409009E6FC5;
+					};
+					70EB326C2238B0D400663325 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7059875F21EC7409009E6FC5;
+					};
+					70EB327A2238B0FB00663325 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 7059875F21EC7409009E6FC5;
 					};
@@ -527,6 +604,8 @@
 				7059875F21EC7409009E6FC5 /* DNProject */,
 				7059877721EC740A009E6FC5 /* DNProjectTests */,
 				7059878221EC740A009E6FC5 /* DNProjectUITests */,
+				70EB326C2238B0D400663325 /* Tests */,
+				70EB327A2238B0FB00663325 /* DNProjectTestBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -538,12 +617,9 @@
 			files = (
 				705987AA21EC748C009E6FC5 /* Main.storyboard in Resources */,
 				705987A721EC748C009E6FC5 /* Assets.xcassets in Resources */,
-				70BFAA9B223650960055F4B1 /* DNDebugConfig.xcconfig in Resources */,
 				7004504E2214066800718E49 /* back@2x.png in Resources */,
 				7004504C221405EB00718E49 /* choosePhoto@2x.png in Resources */,
 				705987A921EC748C009E6FC5 /* LaunchScreen.storyboard in Resources */,
-				70BFAA9E223650BA0055F4B1 /* DNReleaseConfig.xcconfig in Resources */,
-				70BFAAA0223650C50055F4B1 /* DNCommonConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +631,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7059878121EC740A009E6FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EB326B2238B0D400663325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EB32792238B0FB00663325 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -632,7 +722,9 @@
 				70D1EA112212A54B00C1542B /* SecondeViewController.m in Sources */,
 				7028C0282230E7E700EFC547 /* UIViewController+Extra.m in Sources */,
 				7020040621EC7CB500E2B306 /* UIScrollView+Extra.m in Sources */,
+				700FC47B2239FEEB00944E69 /* TestViewController.m in Sources */,
 				707513AF2213BA9000CC70E2 /* DNPhotoPickerController.m in Sources */,
+				709847DF223A23C6001A8A8D /* DNCollectionViewFlowLayout.m in Sources */,
 				70598C3722238DC300798E08 /* TestModel.m in Sources */,
 				7001C09321EED4A500535562 /* UIImageView+Extra.m in Sources */,
 				700450442213E84D00718E49 /* DNAlbumLisetCell.m in Sources */,
@@ -661,6 +753,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70EB32692238B0D400663325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EB32772238B0FB00663325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -673,6 +779,16 @@
 			isa = PBXTargetDependency;
 			target = 7059875F21EC7409009E6FC5 /* DNProject */;
 			targetProxy = 7059878421EC740A009E6FC5 /* PBXContainerItemProxy */;
+		};
+		70EB32732238B0D400663325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7059875F21EC7409009E6FC5 /* DNProject */;
+			targetProxy = 70EB32722238B0D400663325 /* PBXContainerItemProxy */;
+		};
+		70EB32812238B0FB00663325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7059875F21EC7409009E6FC5 /* DNProject */;
+			targetProxy = 70EB32802238B0FB00663325 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -924,6 +1040,78 @@
 			};
 			name = Release;
 		};
+		70EB32752238B0D400663325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Remember.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNProject.app/DNProject";
+			};
+			name = Debug;
+		};
+		70EB32762238B0D400663325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Remember.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNProject.app/DNProject";
+			};
+			name = Release;
+		};
+		70EB32832238B0FB00663325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DNProjectTestBundle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Remember.DNProjectTestBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNProject.app/DNProject";
+			};
+			name = Debug;
+		};
+		70EB32842238B0FB00663325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DNProjectTestBundle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Remember.DNProjectTestBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNProject.app/DNProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -959,6 +1147,24 @@
 			buildConfigurations = (
 				7059879321EC740A009E6FC5 /* Debug */,
 				7059879421EC740A009E6FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70EB32742238B0D400663325 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70EB32752238B0D400663325 /* Debug */,
+				70EB32762238B0D400663325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70EB32822238B0FB00663325 /* Build configuration list for PBXNativeTarget "DNProjectTestBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70EB32832238B0FB00663325 /* Debug */,
+				70EB32842238B0FB00663325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,9 +7,11 @@
 //
 
 #import "SecondeViewController.h"
+#import "DNCollectionViewFlowLayout.h"
 
 @interface SecondeViewController ()
 
+@property (nonatomic, strong) UICollectionView *collectionView;
 @end
 
 @implementation SecondeViewController
@@ -20,12 +22,12 @@
     self.title = @"哈哈哈哈";
     self.view.backgroundColor = UIColor.cyanColor;
     
-    UILabel *lb = [[UILabel alloc] init];
-    lb.text = @"gyjq";
-    lb.font = [UIFont systemFontOfSize:30];
-    lb.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:lb];
-    lb.frame = CGRectMake(10, 100, 200, 30);
+//    UILabel *lb = [[UILabel alloc] init];
+//    lb.text = @"gyjq";
+//    lb.font = [UIFont systemFontOfSize:30];
+//    lb.backgroundColor = [UIColor orangeColor];
+//    [self.view addSubview:lb];
+//    lb.frame = CGRectMake(10, 100, 200, 30);
     
     //方法一
 //    CGSize suggestedSize = [lb sizeThatFits:CGSizeMake(200, 30)];
@@ -40,8 +42,8 @@
 //    lb.frame = CGRectMake(10, 100, labelSize.width, labelSize.height);
 //
     //方法四
-    CGSize size = [lb.text sizeWithAttributes:@{ NSFontAttributeName: lb.font }];
-    lb.frame = CGRectMake(10, 100, size.width, size.height);
+//    CGSize size = [lb.text sizeWithAttributes:@{ NSFontAttributeName: lb.font }];
+//    lb.frame = CGRectMake(10, 100, size.width, size.height);
     // Do any additional setup after loading the view.
 }
 
@@ -72,5 +74,18 @@
         
         [self.delegate operationSelector:tag];
     }
+}
+
+- (UICollectionView *)collectionView {
+    
+    if (!_collectionView) {
+        
+        DNCollectionViewFlowLayout *flowLayout = [[DNCollectionViewFlowLayout alloc] init];
+        [flowLayout configItemWidth:^CGFloat(NSIndexPath * _Nonnull indexPath, CGFloat height) {
+            
+            return 10;
+        }];
+    }
+    return _collectionView;
 }
 @end

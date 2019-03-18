@@ -66,6 +66,55 @@ static NSString  *const DNRangeKey = @"range";
     return [md5Str lowercaseString];
 }
 
+- (NSString *)dn_calculationAge {
+    
+    NSString *birth;
+    
+    if ([self dn_isValidIDCardNumber]) {
+        
+        if (self.length > 15) {
+            birth = [self substringWithRange:NSMakeRange(6, 8)];//19920319
+        } else {
+            birth = [NSString stringWithFormat:@"19%@",[self substringWithRange:NSMakeRange(6, 6)]];//19920319]
+        }
+        
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDate *nowDate = [NSDate date];
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"yyyyMMdd"];
+        //生日
+        NSDate *birthDay = [dateFormatter dateFromString:birth];
+        
+        //用来得到详细的时差
+        unsigned int unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
+        NSDateComponents *date = [calendar components:unitFlags fromDate:birthDay toDate:nowDate options:0];
+        
+        if(date.year > 0) {
+            
+            if(date.month > 0) {
+                
+                if (date.day > 0) {
+                    
+                    return [NSString stringWithFormat:@"%ld岁%ld月%ld天", (long)date.year, (long)date.month, (long)date.day];
+                } else {
+                    
+                    return [NSString stringWithFormat:@"%ld岁%ld月", (long)date.year, (long)date.month];
+                }
+            } else {
+                return [NSString stringWithFormat:@"%ld岁", (long)date.year];
+            }
+        } else {
+            return [NSString stringWithFormat:@"0岁"];
+        }
+        
+    } else {
+        
+        DNLog(@"不是合法的身份证号");
+        return nil;
+    }
+}
+
 - (NSUInteger)dn_length {
     
     NSUInteger length = 0;

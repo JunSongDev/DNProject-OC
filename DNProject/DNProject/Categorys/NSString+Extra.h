@@ -32,6 +32,9 @@ typedef NS_ENUM(NSInteger, StringRangeFormat) {
 /** md5加密 */
 - (nullable NSString *)dn_md5String;
 
+/** 根据身份证号码计算年龄 */
+- (NSString *)dn_calculationAge;
+
 /**
  *  按照中文 2 个字符、英文 1 个字符的方式来计算文本长度
  */
